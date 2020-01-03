@@ -1,0 +1,21 @@
+# avaiable level: trace, debug, info, warn, error, fatal, panic
+loglevel: "warn"
+
+# if want to run as service on windows, uncomment below
+# service:
+#   servicename: "TEMPLATE"
+#   displayname: "TEMPLATE"
+#   description: "Description for TEMPLATE"
+
+# use this to config bind address of gin/tcp server
+listener:
+  ip: "0.0.0.0"
+  port: 20080
+
+# uncomment below to write log to redis
+# redislogger:
+#   enabled: true
+#   addr: "127.0.0.1"
+#   port: 6379
+#   password: ""
+#   key: "TEMPLATE/log"
