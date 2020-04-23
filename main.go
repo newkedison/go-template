@@ -48,7 +48,7 @@ func Main(exit <-chan struct{}) {
 
 	// begin basic
 	// 1. do some init work
-	// 2. start an goroutine to to long time work
+	// 2. start an goroutine to do long time work
 	// end basic
 	// begin gin
 	// init gin

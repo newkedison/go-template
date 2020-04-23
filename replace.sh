@@ -67,3 +67,5 @@ else
 fi
 
 find . -type f \( -name "*.go" -or -name "go.mod" -or -name "*.yaml" \) -exec sed -i "s/TEMPLATE/${new_name}/g" {} \;
+basename=$(basename $new_name)
+sed -i "s/TEMPLATE/${basename}/g" Makefile
